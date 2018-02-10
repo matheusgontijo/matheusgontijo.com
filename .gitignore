@@ -44,3 +44,5 @@ node_modules
 
 .sass-cache
 .jekyll-metadata
+
+deploy.sh
