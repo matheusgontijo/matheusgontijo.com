@@ -12,7 +12,7 @@ tags: magento2 collections php-cli terminal
 
 <p>Well, there are several ways to solve it (really really many!), but Magento itself provide us a way which may be very useful to you:</p>
 
-<p><code>\Magento\Framework\Model\ResourceModel\Iterator</code> has a function called <code>walk</code> and the idea behind is: instead of reading <strong>ALL THE DATA at once</strong>, it reads <strong>row-by-row</strong> and calls the <code>callback</code> function. Thus the "out of memory" issue just don't come out any longer, since we are now consuming small chunk's of data!</p>
+<p><code>\Magento\Framework\Model\ResourceModel\Iterator</code> has a function called <code>walk</code> and the idea behind is: instead of reading <strong>ALL THE DATA at once</strong>, it reads <strong>row-by-row</strong> and calls the <code>callback</code> function. Thus the "out of memory" issue don't come out any longer, since we are now consuming small chunk's of data!</p>
 
 <pre class="prettyprint">
 public function iterator()
@@ -42,7 +42,7 @@ public function callback($args)
 }
 </pre>
 
-<p>Obviously it will take more time to process since it makes a full load of the product, but certainly it fits to most of the rules out there as opposed to just iterate the entire collection at once and get "out of memory" error.</p>
+<p>Obviously it will take more time to process since it makes a full load of the product, but certainly it fits to most of the rules out there (as general background process, export/import, mass product updates) as opposed to just iterate the entire collection at once and get "out of memory" error.</p>
 
 <p>I created a <a href="https://github.com/matheusgontijo/blog-examples/tree/master/2018-02-10-magento-2-working-with-large-collections-php-fatal-error-allowed-memory-size-of-xxxx-bytes-exhausted/MatheusGontijo/Iterator" target="blank">project on my GitHub</a> where you can download/clone and simply run the command <code>php bin/magento matheusgontijo:iterator</code> and have the a module running and then adjust for your needs.</p>
 
