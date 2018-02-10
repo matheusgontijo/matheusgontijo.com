@@ -54,4 +54,17 @@ code {
     background: #202020;
     border-radius: 7px;
     border: 1px solid #3b3b3b;
+    word-break: break-all;
+}
+
+@media (max-width: 30em) {
+    pre.prettyprint {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 68em) {
+    pre.prettyprint {
+        overflow-y: scroll;
+    }
 }
