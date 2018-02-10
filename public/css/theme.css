@@ -1,0 +1,630 @@
+/* ============================================================================ */
+/* ============================================================================ */
+/* General */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #fff;
+    background-color: #181818;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+a {
+    color: #60bdff;
+}
+
+a strong {
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+    color: #90ccff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: bold;
+    line-height: 1.25;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+h3 {
+    margin-top: 1.5rem;
+    font-size: 1.25rem;
+}
+
+h4, h5, h6 {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.8rem;
+}
+
+ul, ol, dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-bottom: .5rem;
+}
+
+hr {
+    position: relative;
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #fff;
+}
+
+abbr {
+    font-size: 85%;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+}
+
+abbr[title] {
+    cursor: help;
+    border-bottom: 1px dotted #e5e5e5;
+}
+
+blockquote {
+    padding: .5rem 1rem;
+    margin: .8rem 0;
+    border-left: .25rem solid #e5e5e5;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: 0 0 1rem;
+    border-radius: 5px;
+}
+
+table {
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 1px solid #e5e5e5;
+    border-collapse: collapse;
+}
+
+td,
+th {
+    padding: .25rem .5rem;
+    border: 1px solid #e5e5e5;
+}
+
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+    background-color: #f9f9f9;
+}
+
+.container {
+    padding-left:    1rem;
+    padding-right: 1rem;
+    margin-left:    auto;
+    margin-right: auto;
+}
+
+.content {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+
+
+/* ============================================================================ */
+/* ============================================================================ */
+/* Image grid */
+
+.responsive-img {
+    max-width: 100%;
+    border: 2px solid #FFF;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+}
+
+.images-grid {
+    margin-bottom: 1.5rem;
+}
+
+.images-grid-left,
+.images-grid-right {
+    width: 48.5%;
+    float: left;
+    
+}
+
+.images-grid-right {
+    margin-left: 3%;
+}
+
+.image-description {
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.twitter-tweet {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.8rem !important;
+}
+
+
+
+/* ============================================================================ */
+/* ============================================================================ */
+/* Full width */
+
+#menu,
+.container {
+    max-width: 50rem;
+}
+
+
+
+/* ============================================================================ */
+/* ============================================================================ */
+/* Menu */
+
+#menu-full {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 2px solid #3d3d3d;
+    min-height: 50px;
+}
+
+#menu {
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#menu-matheus-gontijo {
+    float: left;
+    color: #fff;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 50px;
+    text-decoration: none;
+}
+
+#menu-matheus-gontijo:hover {
+    text-decoration: none;
+}
+
+#menu-links {
+    float: left;
+    margin-left: 40px;
+}
+
+.menu-link {
+    color: #fff;
+    font-size: 18px;
+    line-height: 52px;
+    margin-right: 14px;
+    text-decoration: none;
+}
+
+#menu-social-media {
+    float: right;
+}
+
+.menu-social-media-link {
+    line-height: 50px;
+    margin-left: 10px;
+}
+
+.menu-social-media-icon {
+    color: #fff;
+}
+
+
+
+/* ============================================================================ */
+/* ============================================================================ */
+/* Post/Page */
+
+.page-page,
+.post-page {
+    margin-bottom: 1.4em;
+}
+
+.page-page-title,
+.post-page-title {
+    margin-top: 0;
+}
+
+.post-page-date {
+    margin-top: -.5rem;
+    margin-bottom: 1rem;
+    color: #9a9a9a;
+    margin-right: 20px;
+}
+
+.post-page-content {
+    margin-top: 50px;
+}
+
+
+
+/* ============================================================================ */
+/* ============================================================================ */
+/* Related Posts */
+
+#related-posts {
+    border-top: 1px solid #fff;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+#related-posts-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    display: block;
+}
+
+#related-posts .post-list {
+    padding-bottom: 0.5em;
+}
+
+
+/* ============================================================================ */
+/* ============================================================================ */
+/* Talks */
+
+.talk {
+    padding-bottom: 1.2rem;
+    margin-bottom: 1.2rem;
+    border-bottom: 1px solid #fff;
+}
+
+.talk-country-icon {
+    font-size: 1.5rem;
+}
+
+.talk-country {
+    float: left;
+    width: 70px;
+}
+
+.talk-info {
+    margin-left: 70px;
+}
+
+.talk-event-title {
+    display: block;
+    font-size: 1.7rem;
+    margin: 0 0 15px 0;
+}
+
+.talk-title {
+    display: block;
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: normal;
+}
+
+.talk-location {
+    color: #d5d5d5;
+}
+
+#talks-also-I-have-attened {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.talk-list-meetup .talk-event-title {
+    margin: 0 0 5px 0;
+}
+
+
+
+/* ============================================================================ */
+/* ============================================================================ */
+/* Pagination */
+
+.pagination {
+    overflow: hidden; /* clearfix */
+    margin-left: -1rem;
+    margin-right: -1rem;
+    font-family: "PT Sans", Helvetica, Arial, sans-serif;
+    color: #ccc;
+    text-align: center;
+}
+
+.pagination-item {
+    display: block;
+    padding: 1rem;
+    border: 1px solid #eee;
+}
+
+.pagination-item:first-child {
+    margin-bottom: -1px;
+}
+
+.pagination-item:hover {
+    background-color: #f5f5f5;
+}
+
+
+
+/* ============================================================================ */
+/* ============================================================================ */
+/* Post/Page listing */
+
+.post-list {
+    border-bottom: 1px solid #313131;
+    padding-bottom: 1.4em;
+}
+
+.post-list:last-child {
+    border-bottom: none;
+}
+
+.post-list-title {
+    font-size: 1.3rem;
+}
+
+.post-list-title-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.post-list-date {
+    font-size: 0.85rem;
+    margin-top: -.5rem;
+    margin-bottom: 1rem;
+    color: #9a9a9a;
+    margin-right: 20px;
+}
+
+.post-list-info {
+    margin-top: -0.6rem;
+}
+
+
+
+
+/* ============================================================================ */
+/* ============================================================================ */
+/* Home page */
+
+#tag-title {
+    margin-bottom: 50px;
+}
+
+#tag-cloud {
+    margin-top: 50px;
+}
+
+
+/* ============================================================================ */
+/* ============================================================================ */
+/* Home page */
+
+.homepage .container,
+.homepage #menu {
+    max-width: 50rem !important;
+}
+
+#home-matheus-gontijo {
+    margin: 20px 0 60px;
+}
+
+#home-matheus-gontijo-image {
+    float: left;
+    width: 28%;
+}
+
+.home-matheus-gontijo-text {
+    font-family: "Noticia Text", Georgia, serif;
+    
+}
+
+#home-matheus-gontijo-text-wrapper {
+    float: right;
+    width: 68%;
+}
+
+#home-matheus-gontijo-mini-bio-title {
+    font-size: 40px;
+    display: block;
+    margin-top: 20px;
+}
+
+#home-matheus-gontijo-mini-bio-title-matheus-gontijo {
+    color: #ffa500;
+}
+
+#home-matheus-gontijo-mini-bio {
+    font-size: 24px;
+    display: block;
+}
+
+
+
+/* ============================================================================ */
+/* ============================================================================ */
+/* Responsive */
+
+@media (max-width: 30em) {
+    /* ============================================================================ */
+    /* ============================================================================ */
+    /* General */
+
+    html {
+        font-size: 1.2rem;
+    }
+
+
+
+
+    /* ============================================================================ */
+    /* ============================================================================ */
+    /* Menu */
+
+    #menu-full {
+        position: static;
+    }
+
+    #menu {
+        text-align: center;
+    }
+
+    #menu-matheus-gontijo {
+        margin-top: 7px;
+        font-size: 35px;
+    }
+
+    #menu-matheus-gontijo,
+    #menu-links,
+    #menu-social-media {
+        width: 100%;
+    }
+
+    #menu-links {
+        float: none;
+        margin-left: 0;
+    }
+
+
+
+
+    /* ============================================================================ */
+    /* ============================================================================ */
+    /* Pagination */
+
+    .pagination {
+        margin: 3rem 0;
+    }
+    
+    .pagination-item {
+        float: left;
+        width: 50%;
+    }
+    
+    .pagination-item:first-child {
+        margin-bottom: 0;
+        border-top-left-radi 4px;
+        border-bottom-left-radius: 4px;
+    }
+    
+    .pagination-item:last-child {
+        margin-left: -1px;
+        border-top-right-radi 4px;
+        border-bottom-right-radius: 4px;
+    }
+}
+
+@media (max-width: 68em) {
+    /* ============================================================================ */
+    /* ============================================================================ */
+    /* Homepage */
+
+    #home-matheus-gontijo {
+        margin-top: 0;
+    }
+
+    #home-matheus-gontijo-image,
+    #home-matheus-gontijo-text-wrapper {
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    #home-matheus-gontijo-image-img {
+        display: inline;
+    }
+
+
+
+    /* ============================================================================ */
+    /* ============================================================================ */
+    /* Image grid */
+    .images-grid-left,
+    .images-grid-right {
+        float: none;
+        width: auto;
+        margin: 0;
+    }
+
+    .images-grid-left {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (min-width: 68em) {
+    /* ============================================================================ */
+    /* ============================================================================ */
+    /* Menu */
+
+    #menu-full {
+        position: fixed;
+        background: #181818;
+    }
+}
+
+
+
+/* ============================================================================ */
+/* ============================================================================ */
+/* Clean */
+
+#menu:after,
+#menu-links:after,
+#menu-social-media:after,
+#home-matheus-gontijo:after,
+.images-grid:after,
+.images-grid-container:after,
+.talk:after
+{ display: block; content: "."; clear: both; font-size: 0; line-height: 0; height: 0; overflow: hidden; }

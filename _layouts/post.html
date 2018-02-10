@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="post-page">
+    <h1 class="post-page-title">{{ page.title }}</h1>
+    <div class="post-page-info">
+        <span class="post-page-date">{{ page.date | date_to_string }}</span>
+        <span class="post-page-tags">
+        {% for tag in page.tags %}
+        <a href="{{ site.url }}/tag/{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+        </span>  
+    </div>
+    <div class="post-page-content">{{ content }}</div>
+</div>
+
+<div id="related-posts">
+    <span id="related-posts-title">Related Posts</span>
+    <div class="post-list-wrapper">
+        {% for post in site.related_posts limit:5 %}
+        <div class="post-list">
+            <h2 class="post-list-title"><a href="{{ post.url }}" class="post-list-title-link">{{ post.title }}</a> <span class="post-list-date">{{ post.date | date_to_string }}</span></h2>
+        </div>
+        {% endfor %}
+    </div>
+</div>

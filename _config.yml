@@ -1,0 +1,30 @@
+# Dependencies
+markdown:            redcarpet
+highlighter:         pygments
+
+# Permalinks
+permalink:           pretty
+#relative_permalinks: true
+
+tag_permalink_style: pretty
+tag_page_layout:     tag_page
+tag_page_dir:        tag
+
+# Setup
+title:               Matheus Gontijo
+tagline:             'Magento, PHP, Symfony, Zend Framework, Remote Work'
+description:         'Magento, PHP, Symfony, Zend Framework, Remote Work'
+url:                 http://www.matheusgontijo.com
+baseurl:             /
+
+paginate:            100
+
+plugins: [
+    jekyll-paginate,
+    jekyll-gist,
+    jekyll/tagging
+]
+
+include: [
+    '.htaccess'
+]
