@@ -19,7 +19,7 @@ public function iterator()
 {
     // you can filter by attribute
     // $this
-    //    ->collection // \Magento\Catalog\Api\ProductRepositoryInterface
+    //    ->collection // \Magento\Catalog\Model\ResourceModel\Product\Collection
     //    ->addAttributeToFilter('name', array('like' => '%samsung%'));
 
     $this
@@ -33,7 +33,9 @@ public function iterator()
 public function callback($args)
 {
     // load of the product
-    $product = $this->productRepository->getById($args['row']['entity_id']);
+    $product = $this
+        ->productRepository // \Magento\Catalog\Api\ProductRepositoryInterface
+        ->getById($args['row']['entity_id']);
 
     // do whatever you want to with the $product
     print_r($product->debug());
