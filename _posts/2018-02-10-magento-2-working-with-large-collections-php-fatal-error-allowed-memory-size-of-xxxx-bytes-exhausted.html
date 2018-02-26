@@ -20,13 +20,13 @@ public function iterator()
     // you can filter by attribute
     // $this
     //    ->collection // \Magento\Catalog\Model\ResourceModel\Product\Collection
-    //    ->addAttributeToFilter('name', array('like' => '%samsung%'));
+    //    ->addAttributeToFilter('name', ['like' => '%samsung%'));
 
     $this
         ->iterator // \Magento\Framework\Model\ResourceModel\Iterator
         ->walk(
             $this->collection->getSelect(),
-            array(array($this, 'callback'))
+            [[$this, 'callback']]
         );
 }
 
