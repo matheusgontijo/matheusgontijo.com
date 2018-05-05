@@ -337,8 +337,25 @@ tbody tr:nth-child(odd) th {
     width: 70px;
 }
 
-.talk-info {
+.talk-info-wrapper {
     margin-left: 70px;
+}
+
+.talk-info-with-video {
+    float: left;
+    width: 60%;
+}
+
+.talk-info-video {
+    width: 32%;
+    float: right;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+.talk-info-video-img {
+    width: 100%;
+    margin-bottom: 0;
 }
 
 .talk-event-title {
@@ -611,6 +628,22 @@ tbody tr:nth-child(odd) th {
     #menu-full {
         position: fixed;
         background: #181818;
+    }
+}
+
+@media (max-width: 699px) {
+    /* ============================================================================ */
+    /* ============================================================================ */
+    /* Talks */
+
+    .talk-info-with-video {
+        width: 100%;
+    }
+
+    .talk-info-video {
+        width: 80%;
+        float: left;
+        margin-top: 20px;
     }
 }
 
