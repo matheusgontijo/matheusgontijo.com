@@ -12,9 +12,10 @@ tag_page_dir:        tag
 
 # Setup
 title:               Matheus Gontijo
-tagline:             'Magento, PHP, Symfony, Zend Framework, Remote Work'
-description:         'Magento, PHP, Symfony, Zend Framework, Remote Work'
+tagline:             'Magento, PHP, Symfony, Zend Framework, Remote Work, e-commerce'
+description:         'Magento, PHP, Symfony, Zend Framework, Remote Work, e-commerce'
 url:                 http://www.matheusgontijo.com
+#url:                 http://local.matheusgontijo:4111
 baseurl:             /
 
 paginate:            100
